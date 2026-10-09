@@ -1,0 +1,14 @@
+{
+  "_comment": "Generic stdio MCP server entry for clients that use the mcpServers shape (Claude Desktop, Cursor, Windsurf, ...). Replace <NODE_EXECUTABLE> and <SERVER_ENTRY>, or run `node scripts/setup.mjs --json`. Note that JSON has no comments: delete this key before use.",
+  "mcpServers": {
+    "zotero": {
+      "command": "<NODE_EXECUTABLE>",
+      "args": [
+        "<SERVER_ENTRY>"
+      ],
+      "env": {
+        "ZOTERO_API_BASE": "http://127.0.0.1:23119/api/users/0"
+      }
+    }
+  }
+}

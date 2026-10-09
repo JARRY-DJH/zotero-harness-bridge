@@ -1,0 +1,46 @@
+# ---------------------------------------------------------------------------
+# zotero-harness-bridge
+# ---------------------------------------------------------------------------
+
+# Dependencies (this project has none at runtime; these cover dev tooling)
+node_modules/
+.pnpm-store/
+
+# Vendored / extracted third-party code must never be committed
+vendor/
+
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Captured MCP protocol transcripts and server stderr dumps produced while
+# probing a local client. They are machine specific and often huge.
+*.jsonl
+*.stderr.log
+
+# Test and coverage output
+coverage/
+.nyc_output/
+*.lcov
+
+# Build output
+dist/
+build/
+*.tgz
+
+# Editors and operating systems
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+desktop.ini

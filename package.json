@@ -1,0 +1,58 @@
+{
+  "name": "zotero-harness-bridge",
+  "version": "0.1.0",
+  "description": "Dependency-free MCP server that bridges a local Zotero library into DeepSeek Harness (DSH) and other MCP clients.",
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "zotero",
+    "deepseek-harness",
+    "dsh",
+    "reference-manager",
+    "citations",
+    "bibtex",
+    "stdio"
+  ],
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "main": "src/server.mjs",
+  "exports": {
+    "./config": "./src/config.mjs",
+    "./package.json": "./package.json"
+  },
+  "bin": {
+    "zotero-harness-bridge": "src/server.mjs"
+  },
+  "files": [
+    "src/",
+    "scripts/",
+    "test/",
+    "examples/",
+    "docs/",
+    "README.md",
+    "README.zh-CN.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "start": "node src/server.mjs",
+    "check": "node src/server.mjs --check",
+    "print-config": "node src/server.mjs --print-config",
+    "setup": "node scripts/setup.mjs",
+    "test": "node --test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JARRY-DJH/zotero-harness-bridge.git"
+  },
+  "bugs": {
+    "url": "https://github.com/JARRY-DJH/zotero-harness-bridge/issues"
+  },
+  "homepage": "https://github.com/JARRY-DJH/zotero-harness-bridge#readme",
+  "publishConfig": {
+    "access": "public"
+  }
+}
